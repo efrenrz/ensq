@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: ensq
+        psr4_prefix: ensq
+        src_path: app

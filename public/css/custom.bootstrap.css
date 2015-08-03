@@ -1,0 +1,39 @@
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+  color: #777777; }
+
+#custom-bootstrap-menu.navbar-default {
+  font-size: 13px;
+  background-color: white;
+  border-width: 0px;
+  border-radius: 0px; }
+
+#custom-bootstrap-menu.navbar-default .navbar-nav > li > a {
+  color: #777777;
+  background-color: white; }
+
+#custom-bootstrap-menu.navbar-default .navbar-nav > li > a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav > li > a:focus {
+  color: #ab0000;
+  background-color: white; }
+
+#custom-bootstrap-menu.navbar-default .navbar-nav > .active > a,
+#custom-bootstrap-menu.navbar-default .navbar-nav > .active > a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav > .active > a:focus {
+  color: #555555;
+  background-color: white; }
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+  border-color: #ffffff; }
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+  background-color: #ffffff; }
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+  background-color: #848484; }
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #848484; }
+
+/*# sourceMappingURL=custom.bootstrap.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,CAAC;EACC,KAAK,EAAE,OAAO;;AAChB,CAAC;EACC,KAAK,EAAE,OAAO;;AAChB,GAAG;EACD,KAAK,EAAE,OAAO;EACd,UAAU,EAAE,OAAO;;AACrB,IAAI;EACF,MAAM,EAAE,CAAC;EACT,MAAM,EAAE,CAAC",
+"sources": ["../../resources/assets/sass/dos.sass"],
+"names": [],
+"file": "dos.css"
+}
