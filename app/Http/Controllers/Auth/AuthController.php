@@ -2,6 +2,7 @@
 
 namespace ensq\Http\Controllers\Auth;
 
+use ensq\Http\Requests\Request;
 use ensq\User;
 use Validator;
 use ensq\Http\Controllers\Controller;
@@ -10,6 +11,8 @@ use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 class AuthController extends Controller
 {
+    protected $username = 'username';
+
     /*
     |--------------------------------------------------------------------------
     | Registration & Login Controller
@@ -56,10 +59,50 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = new User([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+
+        $user->role = 'user';
+        $user->save();
+
+        return $user;
+    }
+
+    /**
+     * Get the path to the login route.
+     *
+     * @return string
+     */
+    public function loginPath()
+    {
+        return route('login');
+    }
+    /**
+     * Get the post register / login redirect path.
+     *
+     * @return string
+     */
+    public function redirectPath()
+    {
+        return route('admin');
+    }
+
+    protected function getFailedLoginMessage()
+    {
+        return trans('validation.login');
+    }
+
+    protected function getCredentials( $request)
+    {
+
+        return [
+            'username' => $request->username,
+            'password' => $request->password,
+            'active' => 1
+        ];
+        //return $request->only($this->loginUsername(), 'password');
     }
 }

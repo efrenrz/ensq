@@ -29,5 +29,6 @@ class Kernel extends HttpKernel
         'auth' => \ensq\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'guest' => \ensq\Http\Middleware\RedirectIfAuthenticated::class,
+        'role' => \ensq\Http\Middleware\Role::class,
     ];
 }

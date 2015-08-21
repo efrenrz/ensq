@@ -29,4 +29,13 @@ class PasswordController extends Controller
     {
         $this->middleware('guest');
     }
+
+    public function redirectPath()
+    {
+        return route('home');
+    }
+    protected function getEmailSubject()
+    {
+        return trans('passwords.email_subject');
+    }
 }
